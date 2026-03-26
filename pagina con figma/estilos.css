@@ -1,0 +1,109 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to right, #fff0f0, #ffe6e6);
+}
+
+/* HEADER */
+header {
+    background: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MENU */
+nav {
+    background: #800000;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO CON IMAGEN */
+.hero {
+    text-align: center;
+    padding: 100px;
+    background-image: url("img/inicio1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+/* sombra para que se vea el texto */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero h2, .hero p, .hero button {
+    position: relative;
+}
+
+/* PRODUCTOS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* BOTONES */
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/* CONTACTO */
+.contacto {
+    text-align: center;
+    padding: 50px;
+}
+
+.formulario {
+    background: white;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+input, textarea {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
